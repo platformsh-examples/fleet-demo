@@ -1,0 +1,20 @@
+{
+    "region": "us-4.platform.sh",
+    "plan": "development",
+    "project_prefix": "Directus demo | ",
+    "upstream": {
+        "repository": "https://github.com/chadwcarlson/directus-next.git",
+        "profile": "Directus Demo"
+    },
+    "activity_scripts": [
+        "slack.js"
+    ],
+    "updates": {
+        "environment_name": "directus-updates",
+        "title": "Directus updates",
+        "operations": {
+            "dependencies": "npm-update",
+            "upstream": "upstream-update"
+        }
+    }
+}
